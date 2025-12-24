@@ -106,6 +106,8 @@ This level of detail lets you immediately see why products were included or excl
 
 Below are example JSON structures for each step in a competitor selection pipeline. **This is just one example use case.** The X-Ray library you build should be general-purpose and reusable across different systems and pipelines—whether it's competitor discovery, content recommendation, lead scoring, or any other multi-step decision process. The goal is a library that can be dropped into any part of your system where you need visibility into decision-making.
 
+**Note on data format:** The JSON structures below are just one way to represent X-Ray data. In practice, different systems may need different formats or schemas. When building your library, consider how you'll handle varying data structures—will you enforce a strict schema, allow flexible key-value pairs, or something else? For this exercise, feel free to restrict to a specific format if it simplifies your implementation. We're more interested in your architectural thinking than supporting every edge case.
+
 Your implementation doesn't need to match these structures exactly, but they illustrate the level of detail that makes X-Ray useful for debugging.
 
 ### Step 1: Keyword Generation
@@ -398,6 +400,7 @@ We're evaluating (in order of importance):
 - **Start with the data model.** What does an X-Ray record look like? Get this right first.
 - **The demo app is secondary.** It exists only to showcase your X-Ray system. Keep it simple - dummy data is perfectly fine.
 - **Show your thinking.** We care more about how you think and the decisions you make than a perfect implementation. The video walkthrough is your chance to explain your reasoning.
+- **Use AI assistance freely.** We're believers in AI-assisted development—not AI-generated slop, but thoughtful use of AI tools. Use them for brainstorming, architecture discussions, rubber-ducking ideas, and yes, coding too. We find AI is often most valuable in the thinking and planning phases. Just make sure you understand and can explain everything you submit.
 
 ---
 
