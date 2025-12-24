@@ -104,7 +104,9 @@ This level of detail lets you immediately see why products were included or excl
 
 ## Example X-Ray Data Structures
 
-Below are example JSON structures for each step in a competitor selection pipeline. Your implementation doesn't need to match this exactly, but it illustrates the level of detail that makes X-Ray useful.
+Below are example JSON structures for each step in a competitor selection pipeline. **This is just one example use case.** The X-Ray library you build should be general-purpose and reusable across different systems and pipelines—whether it's competitor discovery, content recommendation, lead scoring, or any other multi-step decision process. The goal is a library that can be dropped into any part of your system where you need visibility into decision-making.
+
+Your implementation doesn't need to match these structures exactly, but they illustrate the level of detail that makes X-Ray useful for debugging.
 
 ### Step 1: Keyword Generation
 
@@ -239,38 +241,26 @@ Below are example JSON structures for each step in a competitor selection pipeli
     {
       "asin": "B0COMP01",
       "title": "HydroFlask 32oz Wide Mouth",
-      "llm_assessment": {
-        "is_competitor": true,
-        "confidence": 0.95,
-        "reasoning": "Same product type: insulated stainless steel water bottle with similar capacity"
-      }
+      "is_competitor": true,
+      "confidence": 0.95
     },
     {
       "asin": "B0COMP02",
       "title": "Yeti Rambler 26oz",
-      "llm_assessment": {
-        "is_competitor": true,
-        "confidence": 0.92,
-        "reasoning": "Same product type: insulated stainless steel water bottle, slightly smaller capacity but directly comparable"
-      }
+      "is_competitor": true,
+      "confidence": 0.92
     },
     {
       "asin": "B0COMP05",
       "title": "Replacement Lid for HydroFlask",
-      "llm_assessment": {
-        "is_competitor": false,
-        "confidence": 0.98,
-        "reasoning": "This is a replacement part/accessory, not a water bottle itself"
-      }
+      "is_competitor": false,
+      "confidence": 0.98
     },
     {
       "asin": "B0COMP06",
       "title": "Water Bottle Carrier Bag with Strap",
-      "llm_assessment": {
-        "is_competitor": false,
-        "confidence": 0.97,
-        "reasoning": "This is an accessory (carrying case), not a water bottle"
-      }
+      "is_competitor": false,
+      "confidence": 0.97
     }
   ],
   "output": {
@@ -278,7 +268,7 @@ Below are example JSON structures for each step in a competitor selection pipeli
     "confirmed_competitors": 8,
     "false_positives_removed": 4
   },
-  "reasoning": "LLM identified and removed 4 false positives: 2 replacement parts, 1 accessory, 1 bundle pack"
+  "reasoning": "LLM identified and removed 4 false positives (accessories and replacement parts)"
 }
 ```
 
