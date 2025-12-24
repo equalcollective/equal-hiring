@@ -21,13 +21,14 @@ Modern software increasingly relies on multi-step, non-deterministic processes:
 
 These systems are notoriously difficult to debug. Traditional logging tells you *what* happened, but not *why* a particular decision was made. When the final output is wrong, you're left reverse-engineering the entire pipeline.
 
-**Example:** Imagine a product comparison system for Amazon (which has 4+ billion products). Given an input product, the system must:
-1. Generate relevant search keywords (LLM step - non-deterministic)
-2. Search and retrieve candidate products (API step - large result set)
-3. Apply filters (price range, rating threshold, category match)
-4. Rank and select the best comparators
+**Example:** Imagine a competitor selection system for Amazon (which has 4+ billion products). Given a seller's product, the system must find the best competitor product to benchmark against:
+1. Generate relevant search keywords from the product title and category (LLM step - non-deterministic)
+2. Search and retrieve candidate competitor products (API step - large result set)
+3. Apply filters (price range, rating threshold, review count, category match)
+4. Use an LLM to evaluate relevance and eliminate false positives (LLM step - non-deterministic)
+5. Rank and select the single best competitor
 
-If the final comparators are poor, which step failed? Was it bad keywords? Overly strict filters? A ranking bug? Without visibility into each decision point, debugging is guesswork.
+If the selected competitor is a poor match, which step failed? Did the LLM generate irrelevant keywords? Were the filters too strict, eliminating good candidates? Did the ranking algorithm pick the wrong product from qualified options? Without visibility into each decision point, debugging is guesswork.
 
 ---
 
