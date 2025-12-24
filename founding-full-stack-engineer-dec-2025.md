@@ -4,7 +4,7 @@
 
 Build an **X-Ray library and dashboard** for debugging non-deterministic, multi-step algorithmic systems.
 
-**Time Budget:** 4-6 hours (please do not exceed this)
+**Time Budget:** Half a day to a full day
 
 **Tech Stack:** Your choice - use whatever you're most productive with
 
