@@ -75,7 +75,7 @@ Build an **X-Ray system** that provides transparency into multi-step decision pr
 
    - Imagine a developer has an existing pipeline they want to instrument. Walk us through what changes they need to make to their code. Specifically: (a) What's the minimal instrumentation to get *something* useful? (b) What does full instrumentation look like? (c) What happens to the pipeline if the X-Ray backend is unavailable?
 
-   **Real-World Application (optional):**
+   **Real-World Application**
 
    - Describe a system you've worked on where X-Ray-style visibility would have saved debugging time. How would you retrofit this solution into that system? 
 
