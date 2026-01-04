@@ -8,6 +8,8 @@ Build an **X-Ray SDK and API** for debugging non-deterministic, multi-step algor
 
 **Tech Stack:** Your choice - use whatever you're most productive with
 
+**Submission Link:** [https://forms.gle/YyPDaZn6NFmcef6e9](https://forms.gle/YyPDaZn6NFmcef6e9)
+
 ---
 
 ## The Problem
@@ -183,7 +185,7 @@ We're evaluating (in order of importance):
    - Brief explanation of your approach
    - Known limitations / future improvements
 3. Upload your video walkthrough (YouTube unlisted, Loom, or similar)
-4. Send us the repo link and video link
+4. Submit it [here]([url](https://forms.gle/YyPDaZn6NFmcef6e9))
 
 ---
 
