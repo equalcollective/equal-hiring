@@ -49,7 +49,7 @@ Build an **X-Ray system** that provides transparency into multi-step decision pr
 
 3. **Architecture Document**
 
-   Name this file `ARCHITECTURE.md` and place it in the root of your repo.
+   Name this file `ARCHITECTURE.md` and place it in the root of your repo. Please have all relevant things (except instalation and running instructions in this doc. will be easier for us to naviate and assess instead of having different docs).
 
    Write a short document (1-2 pages) with diagrams illustrating your data model and system design. Include a brief API spec—endpoint definitions, request/response shapes. Make it easy to skim.
 
