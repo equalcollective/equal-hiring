@@ -1,0 +1,9 @@
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+sqlalchemy[asyncio]>=2.0.25
+asyncpg>=0.29.0
+pydantic>=2.5.0
+python-dotenv>=1.0.0
+
+# X-Ray SDK (install in editable mode: pip install -e ../sdk)
+# Or add the SDK path to PYTHONPATH
