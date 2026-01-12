@@ -85,7 +85,7 @@ Build an **X-Ray system** that provides transparency into multi-step decision pr
 
    - If you were to ship this SDK for real world use cases, what are other technical aspects you would want to work on?
 
-4. **Video Walkthrough** (10 minutes max, Loom, unlisted YouTube, or similar)
+4. **Video Walkthrough** (10 minutes max unlisted Youtube video)
 
    **Hard limit: 10 minutes.** We will stop watching at the 10-minute mark. There's a real human on the other side reviewing these—please respect our time.
 
